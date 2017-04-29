@@ -26,7 +26,7 @@ jQuery('document').ready(function(){
     // Click on a link of the menu listener
     jQuery('.js-menu-link').click(function(){
         jQuery('html, body').animate(
-            {scrollTop: (jQuery(this.hash).position().top - 40) + "px"},
+            {scrollTop: (jQuery(this.hash).position().top) + "px"},
             700
         );
         return false;
@@ -37,16 +37,13 @@ jQuery('document').ready(function(){
         var windowsTop = $window.scrollTop();
         var windowsBottom = windowsTop + $window.height();
 
-        if (windowsTop >= $home.height()) {
+        if (windowsTop + 40 >= $home.height()) {
             $bannerMenu.addClass('o-banner--shown');
         } else {
             $bannerMenu.removeClass('o-banner--shown');
         }
 
         $section.each(function() {
-            console.log(jQuery(this));
-            console.log(jQuery(this).position().top);
-            console.log(windowsBottom);
             if(windowsBottom >= jQuery(this).position().top) {
                 jQuery('.js-menu-link').each(function() {
                     jQuery(this).removeClass('c-menu__link--highlight');

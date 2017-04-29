@@ -157,6 +157,43 @@ p {
     text-align: center;
 }
 
+/* middle separator object */
+.o-box-separator {
+    position: relative;
+    margin: auto;
+}
+
+.o-box-separator::before {
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    content: '';
+    background: #ddd;
+    margin-left: -2px;
+}
+
+.o-box-separator__content {
+    position: relative;
+}
+
+.o-box-separator__content__thumbnail {
+    width: 400px;
+    margin: 25px;
+    display: inline-block;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    line-height: 25px;
+    padding: 25px;
+    vertical-align: top;
+}
+
+.o-box-separator__content__icon {
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
 /* form object */
 .o-form-field {
     display: inline-block;
@@ -283,66 +320,21 @@ p {
     width: 450px;
 }
 
-.c-section-experience {
-    position: relative;
-    margin: auto;
-}
-
-/* TODO */
-.c-section-experience::before {
-    position: absolute;
-    top: 0;
-    left: 18px;
-    width: 4px;
-    height: 100%;
-    content: '';
-    background: #ddd;
-    left: 50%;
-    margin-left: -2px;
-}
-
-.c-sextion-experience__section__cross {
-    top: 50px;
-    position: absolute;
-    font-size: 2rem;
-    left: 50%;
-    margin-left: -12px;
-}
-
-.c-section-experience__section {
-    position: relative;
-}
-
-.c-section-experience__section__description {
-    width: 400px;
-    margin: 25px;
-    display: inline-block;
-    text-align: left;
-    background-color: white;
-    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+/*  */
+.c-accomplishment {
     font-size: 1rem;
     line-height: 25px;
-    padding: 25px;
-    vertical-align: top;
-}
-
-.c-education {
-    position: relative;
+    text-align: left;
+    width: 600px;
+    margin: 25px;
     margin: auto;
 }
 
-.c-education::before {
-    position: absolute;
-    top: 0;
-    left: 18px;
-    width: 4px;
-    height: 100%;
-    content: '';
-    background: #ddd;
-    left: 50%;
-    margin-left: -2px;
+.c-accomplishment__title {
+    text-align: center;
 }
 
+/* footer component */
 .c-footer {
     background-color: #0D0D0D;
     color: #ccc;

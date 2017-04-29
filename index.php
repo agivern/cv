@@ -126,12 +126,12 @@
         </section>
 
 
-        <section id="experience" class="o-section js-section o-section--experience">
+        <section id="experience" class="o-section js-section">
             <h2 class="o-section__title">Experience</h2>
-            <div class="c-section-experience">
-                <section class="c-section-experience__section">
-                    <div class="c-section-experience__section__description">
-                        <h3>Full Stack Developer - <span>Beauteprivee</span></h3>
+            <div class="o-box-separator">
+                <section class="o-box-separator__content">
+                    <div class="o-box-separator__content__thumbnail">
+                        <h3>Full Stack Developer</h3>
                         <ul>
                             <li>Update and maintain the desktop website and the back office</li>
                             <li>Searching and developing with the new technology</li>
@@ -142,19 +142,25 @@
 
                         <p>An interview for welcometothejungle, to present my job at Beauteprivee <a href="http://www.welcometothejungle.co/articles/interview-developpeur-beauteprivee">here</a></p>
                     </div>
-                    <i class="c-sextion-experience__section__cross fa fa-times" aria-hidden="true"></i>
-                    <div class="c-section-experience__section__description">
-                        2 Years (Current job)
+
+                    <i class="o-box-separator__content__icon fa fa-briefcase" aria-hidden="true"></i>
+
+                    <div class="o-box-separator__content__thumbnail">
+                        <p>2 Years (Current job)</p>
+                        <p>At Beauteprivee (Paris - France)</p>
                     </div>
                 </section>
 
-                <section class="c-section-experience__section">
-                    <div class="c-section-experience__section__description">
-                        1 Year and 6 Months
+                <section class="o-box-separator__content">
+                    <div class="o-box-separator__content__thumbnail">
+                        <p>1 Year and 6 Months<p/>
+                        <p>At Meti (Lorient - France)</p>
                     </div>
-                    <i class="c-sextion-experience__section__cross fa fa-times" aria-hidden="true"></i>
-                    <div class="c-section-experience__section__description">
-                        <h3>Back End Web Developer - <span>Meti</span></h3>
+
+                    <i class="o-box-separator__content__icon fa fa-times" aria-hidden="true"></i>
+
+                    <div class="o-box-separator__content__thumbnail">
+                        <h3>Back End Web Developer</h3>
                         <ul>
                             <li>Create a software testing to make unit testing on the proprietary php framework</li>
                             <li>Debug, update and maintain the software</li>
@@ -163,18 +169,21 @@
                     </div>
                 </section>
 
-                <section class="c-section-experience__section">
-                    <div class="c-section-experience__section__description">
-                        <h3>Full Stack Developer - <span>DBAO</span></h3>
+                <section class="o-box-separator__content">
+                    <div class="o-box-separator__content__thumbnail">
+                        <h3>Ful l Stack Developer</h3>
                         <ul>
                             <li>Internship for a web designer</li>
-        <li>Developement of a responsive website <a href="http://www.dbao.givern.com/dbao/index">here</a></li>
-        <li>Developement of a proprietary CMS</li>
+                            <li>Developement of a responsive website <a href="http://www.dbao.givern.com/dbao/index">here</a></li>
+                            <li>Developement of a proprietary CMS</li>
                         </ul>
                     </div>
-                    <i class="c-sextion-experience__section__cross fa fa-times" aria-hidden="true"></i>
-                    <div class="c-section-experience__section__description">
-                        3 Months
+
+                    <i class="o-box-separator__content__icon fa fa-times" aria-hidden="true"></i>
+
+                    <div class="o-box-separator__content__thumbnail">
+                        <p>3 Months</p>
+                        <p>At DBAO (Vannes - France)</p>
                     </div>
                 </section>
             </div>
@@ -187,15 +196,16 @@
 
         <section id="education" class="o-section js-section">
             <h2 class="o-section__title">Education</h2>
-            <div class="c-education">
-                <section class="c-section-experience__section">
-                    <div class="c-section-experience__section__description">
-                        <p>Graduated in 2014 (IUT Vannes)</p>
+            <div class="o-box-separator">
+                <section class="o-box-separator__content">
+                    <div class="o-box-separator__content__thumbnail">
+                        <p>Graduated in 2014</p>
+                        <p>At IUT of Vannes (France)</p>
                     </div>
 
-                    <i class="c-sextion-experience__section__cross fa fa-times" aria-hidden="true"></i>
+                    <i class="o-box-separator__content__icon fa fa-book" aria-hidden="true"></i>
 
-                    <div class="c-section-experience__section__description">
+                    <div class="o-box-separator__content__thumbnail">
                         <h3>Bachelor of Science, Computer Science</h3>
                         <ul>
                             <li>Project management : V-Model, Agile software development (SCRUM, XP), notion CMMI</li>
@@ -210,8 +220,8 @@
 
                 </section>
 
-                <section class="c-section-experience__section">
-                    <div class="c-section-experience__section__description">
+                <section class="o-box-separator__content">
+                    <div class="o-box-separator__content__thumbnail">
                         <h3>BTEC Higher Nationals, Computing and Systems Development</h3>
                         <ul>
                             <li>Base of programming development</li>
@@ -225,10 +235,11 @@
                         </ul>
                     </div>
 
-                    <i class="c-sextion-experience__section__cross fa fa-times" aria-hidden="true"></i>
+                    <i class="o-box-separator__content__icon fa fa-book" aria-hidden="true"></i>
 
-                    <div class="c-section-experience__section__description">
-                        <p>Graduated in 2013 (IUT Vannes)</p>
+                    <div class="o-box-separator__content__thumbnail">
+                        <p>Graduated in 2013</p>
+                        <p>At IUT of Vannes (France)</p>
                     </div>
                 </section>
             </div>
@@ -241,28 +252,28 @@
 
         <section id="accomplishment" class="o-section js-section">
             <h2 class="o-section__title">Accomplishments</h2>
-            <section class="">
-                <h3>French interview</h3>
+            <section class="c-accomplishment">
+                <h3 class="c-accomplishment__title">French interview</h3>
                 <p>French interview to present beauteprivee, explain my job and my choice.</p>
                 <p>Link : <a href="http://www.welcometothejungle.co/articles/interview-developpeur-beauteprivee">www.welcometothejungle.co</a></p>
             </section>
 
-            <section class="">
-                <h3>DBAO Website</h3>
+            <section class="c-accomplishment"">
+                <h3 class="c-accomplishment__title">DBAO Website</h3>
                 <p>During my traineeship, I made a website with Symfony 2.</p>
                 <p>Link : <a href="http://www.dbao.givern.com/dbao/index">www.dbao.givern.com</a></p>
                 <p>Github : <a href="https://github.com/agivern/dbao">www.github.com</a></p>
             </section>
 
-            <section class="">
-                <h3>Video game tool</h3>
+            <section class="c-accomplishment"">
+                <h3 class="c-accomplishment__title">Video game tool</h3>
                 <p>During my BTEC, I develop a tool resembling a database manager for video games.</p>
                 <p>Download : Not available</p>
                 <p>Github : Not available</p>
             </section>
 
-            <section class="">
-                <h3>Video game</h3>
+            <section class="c-accomplishment"">
+                <h3 class="c-accomplishment__title">Video game</h3>
                 <p>Before my BTEC, I self learned the programming language C and I created a video game.</p>
                 <p>Download : Not available</p>
                 <p>Github : Not available</p>
