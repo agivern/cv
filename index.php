@@ -6,25 +6,21 @@
     </head>
 
     <body>
-        <header class="c-header">
-            <aside class="c-menu">
-                <span class="c-menu__name">Alexandre GIVERN</span>
-                <nav>
-                    <ul>
-                        <li><a class="c-menu__link js-menu-link" href="#about">About me</a></li>
-                        <li><a class="c-menu__link js-menu-link" href="#experience">Experience</a></li>
-                        <li><a class="c-menu__link js-menu-link" href="#education">Education</a></li>
-                        <li><a class="c-menu__link js-menu-link" href="#accomplishment">Accomplishments</a></li>
-                        <li><a class="c-menu__link js-menu-link" href="#contact">Contact me</a></li>
-                    </ul>
-                </nav>
-            </aside>
-
+        <header class="o-banner js-banner-menu">
+            <h1 class="c-title">Alexandre GIVERN</h1>
+            <nav class="c-menu">
+                <ul class="c-menu__ul">
+                    <li class="c-menu__li"><a class="c-menu__link js-menu-link" href="#about">About me</a></li>
+                    <li class="c-menu__li"><a class="c-menu__link js-menu-link" href="#experience">Experience</a></li>
+                    <li class="c-menu__li"><a class="c-menu__link js-menu-link" href="#education">Education</a></li>
+                    <li class="c-menu__li"><a class="c-menu__link js-menu-link" href="#accomplishment">Accomplishments</a></li>
+                    <li class="c-menu__li"><a class="c-menu__link js-menu-link" href="#contact">Contact me</a></li>
+                </ul>
+            </nav>
         </header>
 
         <section class="c-home js-home">
-            <div class="c-home__opacity-block">
-            </div>
+            <div class="o-opacity-block"></div>
             <div class="c-home__content">
                 <p class="c-home__text">Hi, I am </p>
                 <h1 class="c-home__name">Alexandre Givern</h1>
@@ -36,85 +32,97 @@
 
         <section id="about" class="o-section js-section">
             <h2 class="o-section__title">About me</h2>
-            <img class="c-about-me__picture" src="images/me.jpg">
-            <div class="c-about-me__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere id sapien vitae elementum. Donec finibus sollicitudin massa, sed maximus est vulputate tincidunt. Aliquam in neque urna. Proin eget euismod justo. Cras metus erat, fringilla ac odio sit amet, faucibus placerat arcu. Ut odio ipsum, euismod a lobortis euismod, auctor in nibh. Mauris tempus consequat bibendum. Sed suscipit orci nec massa semper, in auctor ipsum vehicula. Duis nec ultricies sapien. Maecenas massa tortor, dapibus eu tortor ac, imperdiet pretium turpis. Suspendisse sem lacus, pulvinar sit amet lectus at, efficitur efficitur enim. Aenean est arcu, volutpat eu est ac, efficitur accumsan nisi. Curabitur augue nisl, mattis et urna sed, consequat imperdiet nibh. Aenean et sapien eu tortor egestas congue a at massa.</div>
+            <div class="c-about-me">
+                <img class="c-about-me__picture" src="images/me.jpg">
+                <div class="c-about-me__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere id sapien vitae elementum. Donec finibus sollicitudin massa, sed maximus est vulputate tincidunt. Aliquam in neque urna. Proin eget euismod justo. Cras metus erat, fringilla ac odio sit amet, faucibus placerat arcu. Ut odio ipsum, euismod a lobortis euismod, auctor in nibh. Mauris tempus consequat bibendum. Sed suscipit orci nec massa semper, in auctor ipsum vehicula. Duis nec ultricies sapien. Maecenas massa tortor, dapibus eu tortor ac, imperdiet pretium turpis. Suspendisse sem lacus, pulvinar sit amet lectus at, efficitur efficitur enim. Aenean est arcu, volutpat eu est ac, efficitur accumsan nisi. Curabitur augue nisl, mattis et urna sed, consequat imperdiet nibh. Aenean et sapien eu tortor egestas congue a at massa.</div>
+            </div>
         </section>
-        <section id="skills" class="o-section js-section">
-            <section class="c-section-skills js-section-skills">
+
+        <section id="skills" class="o-section">
+            <section class="c-skills">
                 <h3>Professional skills</h3>
-                <div class="c-skills-value">
-                    <div data-value="100" class="js-progress-bar o-progress-bar__text">
+                <div class="o-progress-bar js-progress-bar">
+                    <div data-value="100" class="js-progress-bar__to-load o-progress-bar__text">
                         HTML/CSS<span class="o-progress-bar__percent">100%</span>
                     </div>
-                    <div class="o-progress-bar">
-                        <div data-value="100" class="o-progress-bar__loaded js-progress-bar"></div>
+                    <div class="o-progress-bar__empty">
+                        <div data-value="100" class="o-progress-bar__to-load js-progress-bar__to-load"></div>
                     </div>
                 </div>
 
-                <div class="c-skills-value">
-                    <div data-value="80" class="js-progress-bar o-progress-bar__text">
+                <div class="o-progress-bar js-progress-bar">
+                    <div data-value="80" class="js-progress-bar__to-load o-progress-bar__text">
                         PHP<span class="o-progress-bar__percent">80%</span>
                     </div>
-                    <div class="o-progress-bar">
-                        <div data-value="80" class="o-progress-bar__loaded js-progress-bar"></div>
+                    <div class="o-progress-bar__empty">
+                        <div data-value="80" class="o-progress-bar__to-load js-progress-bar__to-load"></div>
                     </div>
                 </div>
 
-                <div class="c-skills-value">
-                    <div data-value="90" class="js-progress-bar o-progress-bar__text">
+                <div class="o-progress-bar js-progress-bar">
+                    <div data-value="90" class="js-progress-bar__to-load o-progress-bar__text">
                         JavaScript<span class="o-progress-bar__percent">90%</span>
                     </div>
-                    <div class="o-progress-bar">
-                        <div data-value="90" class="o-progress-bar__loaded js-progress-bar"></div>
+                    <div class="o-progress-bar__empty">
+                        <div data-value="90" class="o-progress-bar__to-load js-progress-bar__to-load"></div>
                     </div>
                 </div>
 
-                <div class="c-skills-value">
-                    <div data-value="60" class="js-progress-bar o-progress-bar__text">
+                <div class="o-progress-bar js-progress-bar">
+                    <div data-value="60" class="js-progress-bar__to-load o-progress-bar__text">
                         C/C++<span class="o-progress-bar__percent">60%</span>
                     </div>
-                    <div class="o-progress-bar">
-                        <div data-value="60" class="o-progress-bar__loaded js-progress-bar"></div>
+                    <div class="o-progress-bar__empty">
+                        <div data-value="60" class="o-progress-bar__to-load js-progress-bar__to-load"></div>
                     </div>
                 </div>
 
-                <div class="c-skills-value">
-                    <div data-value="80" class="js-progress-bar o-progress-bar__text">
+                <div class="o-progress-bar js-progress-bar">
+                    <div data-value="80" class="js-progress-bar__to-load o-progress-bar__text">
                         Java<span class="o-progress-bar__percent">80%</span>
                     </div>
-                    <div class="o-progress-bar">
-                        <div data-value="80" class="o-progress-bar__loaded js-progress-bar"></div>
+                    <div class="o-progress-bar__empty">
+                        <div data-value="80" class="o-progress-bar__to-load js-progress-bar__to-load"></div>
                     </div>
                 </div>
 
-                <div class="c-skills-value">
-                    <div data-value="60" class="js-progress-bar o-progress-bar__text">
-                        Project management<span class="o-progress-bar__percent">60%</span>
+                <div class="o-progress-bar js-progress-bar">
+                    <div data-value="80" class="js-progress-bar__to-load o-progress-bar__text">
+                        SQL<span class="o-progress-bar__percent">80%</span>
                     </div>
-                    <div class="o-progress-bar">
-                        <div data-value="60" class="o-progress-bar__loaded js-progress-bar"></div>
+                    <div class="o-progress-bar__empty">
+                        <div data-value="80" class="o-progress-bar__to-load js-progress-bar__to-load"></div>
                     </div>
                 </div>
 
-                <div class="c-skills-value">
-                    <div data-value="70" class="js-progress-bar o-progress-bar__text">
-                        Software engineering<span class="o-progress-bar__percent">70%</span>
+                <div class="o-progress-bar js-progress-bar">
+                    <div data-value="50" class="js-progress-bar__to-load o-progress-bar__text">
+                        Project management<span class="o-progress-bar__percent">50%</span>
                     </div>
-                    <div class="o-progress-bar">
-                        <div data-value="70" class="o-progress-bar__loaded js-progress-bar"></div>
+                    <div class="o-progress-bar__empty">
+                        <div data-value="50" class="o-progress-bar__to-load js-progress-bar__to-load"></div>
+                    </div>
+                </div>
+
+                <div class="o-progress-bar js-progress-bar">
+                    <div data-value="60" class="js-progress-bar__to-load o-progress-bar__text">
+                        Software engineering<span class="o-progress-bar__percent">60%</span>
+                    </div>
+                    <div class="o-progress-bar__empty">
+                        <div data-value="60" class="o-progress-bar__to-load js-progress-bar__to-load"></div>
                     </div>
                 </div>
             </section>
-            <section class="c-section-skills c-section-skills--description">
+
+            <section class="c-skills c-skills--description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean metus arcu, sodales non vehicula non, eleifend non ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed faucibus odio eget ipsum egestas varius. Suspendisse auctor arcu diam, quis scelerisque urna dapibus a. Suspendisse hendrerit sapien id elit sodales molestie. Proin augue ante, condimentum non tellus vitae, rutrum euismod tortor. Aenean efficitur, arcu ut pharetra luctus, tortor massa maximus lectus, at blandit nulla massa ut ipsum. Ut scelerisque massa vitae mauris ultricies, vitae accumsan dolor varius. Duis nec ante malesuada eros sollicitudin aliquam ac et lorem. In luctus lacinia luctus. Vestibulum porta tortor vel sapien iaculis accumsan.</br></br>
                 Nunc pulvinar placerat nunc. Vivamus ut dolor sit amet justo finibus dictum. Nunc mauris purus, blandit ac vestibulum vitae, dictum at arcu. Duis egestas dolor ex, sit amet finibus elit malesuada et. Curabitur eget varius metus. Duis ut ultrices ligula.
             </section>
         </section>
 
-        <section class="o-section-motivation js-section-motivation o-section-motivation--1">
-            <div class="o-section-motivation__text-div">
-                <p class="o-section-motivation__text">Don't limit your challenges<br/>Challenge your limits</p>
-            </div>
+        <section class="o-banner-motivation js-section-motivation o-banner-motivation--1">
+            <div class="o-opacity-block"></div>
+            <p class="o-banner-motivation__text">Don't limit your challenges<br/>Challenge your limits</p>
         </section>
 
 
@@ -172,10 +180,9 @@
             </div>
         </section>
 
-        <section class="o-section-motivation js-section-motivation o-section-motivation--2">
-            <div class="o-section-motivation__text-div">
-                <p class="o-section-motivation__text">Every accomplishement starts<br/> with the decision to try</p>
-            </div>
+        <section class="o-banner-motivation js-section-motivation o-banner-motivation--2">
+            <div class="o-opacity-block"></div>
+            <p class="o-banner-motivation__text">Every accomplishement starts<br/> with the decision to try</p>
         </section>
 
         <section id="education" class="o-section js-section">
@@ -227,35 +234,34 @@
             </div>
         </section>
 
-        <section class="o-section-motivation js-section-motivation o-section-motivation--3">
-            <div class="o-section-motivation__text-div">
-                <p class="o-section-motivation__text">The journey of a thousand miles <br/>begins with one step</p>
-            </div>
+        <section class="o-banner-motivation js-section-motivation o-banner-motivation--3">
+            <div class="o-opacity-block"></div>
+            <p class="o-banner-motivation__text">The journey of a thousand miles <br/>begins with one step</p>
         </section>
 
         <section id="accomplishment" class="o-section js-section">
             <h2 class="o-section__title">Accomplishments</h2>
-            <section class="o-section__card">
+            <section class="">
                 <h3>French interview</h3>
                 <p>French interview to present beauteprivee, explain my job and my choice.</p>
                 <p>Link : <a href="http://www.welcometothejungle.co/articles/interview-developpeur-beauteprivee">www.welcometothejungle.co</a></p>
             </section>
 
-            <section class="o-section__card">
+            <section class="">
                 <h3>DBAO Website</h3>
                 <p>During my traineeship, I made a website with Symfony 2.</p>
                 <p>Link : <a href="http://www.dbao.givern.com/dbao/index">www.dbao.givern.com</a></p>
                 <p>Github : <a href="https://github.com/agivern/dbao">www.github.com</a></p>
             </section>
 
-            <section class="o-section__card">
+            <section class="">
                 <h3>Video game tool</h3>
                 <p>During my BTEC, I develop a tool resembling a database manager for video games.</p>
                 <p>Download : Not available</p>
                 <p>Github : Not available</p>
             </section>
 
-            <section class="o-section__card">
+            <section class="">
                 <h3>Video game</h3>
                 <p>Before my BTEC, I self learned the programming language C and I created a video game.</p>
                 <p>Download : Not available</p>
@@ -264,16 +270,15 @@
         </section>
 
 
-        <section class="o-section-motivation js-section-motivation o-section-motivation--4">
-            <div class="o-section-motivation__text-div">
-                <p class="o-section-motivation__text">If you can dream it <br/> you can do it</p>
-            </div>
+        <section class="o-banner-motivation js-section-motivation o-banner-motivation--4">
+            <div class="o-opacity-block"></div>
+            <p class="o-banner-motivation__text">If you can dream it <br/> you can do it</p>
         </section>
 
         <section id="contact" class="o-section o-section--dark js-section">
             <h2 class="o-section__title">Contact me</h2>
 
-            <section class="o-section__card o-section__card--dark o-section__card--text-center">
+            <section class="">
                 <div class="o-form-field">
                     <label class="o-form-label">First name :</label>
                     <input id="firstname" type="text"></input>

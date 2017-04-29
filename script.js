@@ -1,30 +1,53 @@
 jQuery('document').ready(function(){
+    var $window = jQuery(window);
+    var $progressBar = jQuery('.js-progress-bar');
+    var $bannerMenu = jQuery('.js-banner-menu');
+    var $section = jQuery('.js-section');
+    var $home = jQuery('.js-home');
 
-    var nav = $('.c-menu');
+    // Initialize the page render
+    $home.css(
+        'height',
+        $window.height())
+    ;
 
-    jQuery('.js-home').css('height', (jQuery(window).height()));
-    jQuery('.js-section-motivation').css('height', (jQuery(window).height() / 2));
+    jQuery('.js-section-motivation').css(
+        'height',
+        $window.height() / 2
+    );
 
+    Typed.new('.js-typist', {
+        strings: jQuery('.js-typist').data('typist').split(','),
+        typeSpeed: 0,
+        backDelay: 2000,
+        loop: true
+    });
 
+    // Click on a link of the menu listener
     jQuery('.js-menu-link').click(function(){
-        jQuery('html, body').animate({scrollTop: (jQuery(this.hash).position().top - 40) + "px"}, 700);
+        jQuery('html, body').animate(
+            {scrollTop: (jQuery(this.hash).position().top - 40) + "px"},
+            700
+        );
         return false;
     });
 
-    jQuery(window).scroll(function () {
-        var windowsTop = jQuery(window).scrollTop();
-        var windowsBottom = windowsTop + jQuery(window).height();
-        var sectionSkillsTop = jQuery('.js-section-skills').offset().top;
-        var sectionSkillsBottom = sectionSkillsTop + jQuery('.js-section-skills').height();
+    // Scroll listener
+    $window.scroll(function () {
+        var windowsTop = $window.scrollTop();
+        var windowsBottom = windowsTop + $window.height();
 
-        if (windowsTop > 300) {
-            nav.addClass('c-menu--shown');
+        if (windowsTop >= $home.height()) {
+            $bannerMenu.addClass('o-banner--shown');
         } else {
-            nav.removeClass('c-menu--shown');
+            $bannerMenu.removeClass('o-banner--shown');
         }
 
-        jQuery('.js-section').each(function() {
-            if(windowsBottom / 2 >= jQuery(this).position().top) {
+        $section.each(function() {
+            console.log(jQuery(this));
+            console.log(jQuery(this).position().top);
+            console.log(windowsBottom);
+            if(windowsBottom >= jQuery(this).position().top) {
                 jQuery('.js-menu-link').each(function() {
                     jQuery(this).removeClass('c-menu__link--highlight');
                 });
@@ -32,33 +55,36 @@ jQuery('document').ready(function(){
             }
         });
 
-
-        if (windowsBottom > sectionSkillsTop && windowsTop < sectionSkillsBottom)
-        {
-            if (!jQuery('.js-section-skills').hasClass('js-progress-bar-loaded'))
+        $progressBar.each(function(){
+            var progressBarTop = jQuery(this).offset().top;
+            var progressBarBottom = progressBarTop + jQuery(this).height();
+            if (windowsBottom > progressBarTop && windowsTop < progressBarBottom)
             {
-                jQuery('.js-section-skills').addClass('js-progress-bar-loaded');
-                jQuery.each(jQuery('.js-progress-bar'),function(){
-                    progressBar(jQuery(this));
-                });
+                if (!jQuery(this).hasClass('js-progress-bar__has-loaded'))
+                {
+                    jQuery(this).addClass('js-progress-bar__has-loaded');
+                    progressBar(jQuery(this).find('.js-progress-bar__to-load'));
+                }
             }
-        }
-        else
-        {
-            jQuery('.js-section-skills').removeClass('js-progress-bar-loaded');
-        }
+            else
+            {
+                jQuery(this).removeClass('js-progress-bar__has-loaded');
+            }
+        });
+
+
     });
 
-    jQuery(window).resize(function() {
-        jQuery('.js-home').css('height', (jQuery(window).height()));
-        jQuery('.js-section-motivation').css('height', (jQuery(window).height() / 2));
-    });
-
-    Typed.new('.js-typist', {
-        strings: jQuery('.js-typist').data('typist').split(','),
-        typeSpeed: 0,
-        backDelay: 2000,
-        loop: true
+    // Resize listener
+    $window.resize(function() {
+        jQuery('.js-home').css(
+            'height',
+            jQuery(window).height()
+        );
+        jQuery('.js-section-motivation').css(
+            'height',
+            $window.height() / 2
+        );
     });
 });
 
