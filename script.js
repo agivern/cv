@@ -83,6 +83,22 @@ jQuery('document').ready(function(){
             $window.height() / 2
         );
     });
+
+    jQuery(".js-contact-me").click(function() {
+
+    jQuery.ajax({
+        url : 'contact.php',
+        type : 'POST',
+        data : getFormInput(),
+        success : function(data) {
+
+        },
+        error : function() {
+
+        }
+    });
+
+});
 });
 
 function progressBar(element) {
@@ -100,4 +116,13 @@ function progressBar(element) {
             element.css('width',width + '%');
         }
     }
+}
+
+function getFormInput() {
+    var jsonReturn = {
+        'email' : jQuery('.js-form-email').val(),
+        'subject' : jQuery('.js-form-subject').val(),
+        'message' : jQuery('.js-form-message').val()
+    };
+    return jsonReturn;
 }

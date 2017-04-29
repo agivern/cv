@@ -171,7 +171,7 @@
 
                 <section class="o-box-separator__content">
                     <div class="o-box-separator__content__thumbnail">
-                        <h3>Ful l Stack Developer</h3>
+                        <h3>Full Stack Developer</h3>
                         <ul>
                             <li>Internship for a web designer</li>
                             <li>Developement of a responsive website <a href="http://www.dbao.givern.com/dbao/index">here</a></li>
@@ -291,30 +291,19 @@
 
             <section class="">
                 <div class="o-form-field">
-                    <label class="o-form-label">First name :</label>
-                    <input id="firstname" type="text"></input>
+                    <label class="o-form-label">E-mail</label>
+                    <input class="js-form-email" type="text"></input>
                 </div>
 
                 <div class="o-form-field">
-                    <label class="o-form-label">E-mail : </label>
-                    <input id="email" type="text"></input>
+                    <label class="o-form-label">Subject</label>
+                    <input class="js-form-subject" type="text"></input>
                 </div>
 
-                <br/>
+                <label class="o-form-label">Message</label>
+                <textarea class="js-form-message" name="message"></textarea>
 
-                <div class="o-form-field">
-                    <label class="o-form-label">Last name :</label>
-                    <input id="lastname" type="text"></input>
-                </div>
-
-                <div class="o-form-field">
-                    <label class="o-form-label">Phone number :</label>
-                    <input id="phone" type="text"></input>
-                </div>
-                <label class="o-form-label">Message :</label>
-                <textarea id="message" name="message"></textarea>
-
-                <button class="o-form-button">Send your message</button>
+                <button class="o-form-button js-contact-me">Send your message</button>
             </section>
         </section>
 
