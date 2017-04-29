@@ -90,11 +90,19 @@ jQuery('document').ready(function(){
         url : 'contact.php',
         type : 'POST',
         data : getFormInput(),
+        contentType: 'application/json',
         success : function(data) {
-
+            if (data.error) {
+                jQuery('.js-form-error').removeClass('is-hide');
+            }
+            else {
+                jQuery('.js-contact-me').addClass('is-hide');
+                jQuery('.js-form-error').addClass('is-hide');
+                jQuery('.js-form-success').removeClass('is-hide');
+            }
         },
-        error : function() {
-
+        error : function(data) {
+            jQuery('.js-form-error').removeClass('is-hide');
         }
     });
 

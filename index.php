@@ -304,6 +304,8 @@
                 <textarea class="js-form-message" name="message"></textarea>
 
                 <button class="o-form-button js-contact-me">Send your message</button>
+                <p class="js-form-success is-hide">Thanks to contact me ! I will answer you as soon as possible</p>
+                <p class="js-form-error is-hide">I am sorry, we can't sent your email right now. You can contact me on <a href="https://www.linkedin.com/in/agivern/">linkedin</a></p>
             </section>
         </section>
 
