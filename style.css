@@ -1,0 +1,344 @@
+html, body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+p {
+    margin: 0;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/******************************************************************************/
+/* OBJECT CSS
+/******************************************************************************/
+
+/* banner object */
+.o-banner {
+    position: fixed;
+    top: -300px;
+    background-color: #999;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+}
+
+.o-banner--shown {
+    top: 0;
+}
+
+/* opacity block object */
+.o-opacity-block {
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+}
+
+
+/* Main section object */
+.o-section {
+    background-color: #F8F8F8;
+    padding: 75px 20px;
+    text-align: center;
+}
+
+.o-section--dark {
+    background-color: #191919;
+    color: #ccc;
+}
+
+.o-section__title {
+    font-size: 2.2rem;
+    letter-spacing: 6px;
+    line-height: 38px;
+    text-transform: uppercase;
+    margin: 0 0 25px 0;
+}
+
+/* Progress bar object */
+.o-progress-bar {
+    font-size: 1rem;
+    line-height: 25px;
+    width: 300px;
+}
+
+.o-progress-bar__text {
+    position: relative;
+    overflow: hidden;
+    height: 25px;
+    min-width: 60%;
+}
+
+.o-progress-bar__percent {
+    position: absolute;
+    right: 0;
+}
+
+.o-progress-bar__empty {
+    width: 300px;
+    height: 10px;
+    background: #e4e4e4;
+    display: inline-block;
+}
+
+.o-progress-bar__to-load {
+    background: #222;
+    height: 100%;
+    width: 0;
+}
+
+/* Banner motivation object */
+.o-banner-motivation {
+    position: relative;
+    overflow: hidden;
+    background: no-repeat center bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.o-banner-motivation--1 {
+    background-image: url("images/landscape_motivation_1.jpg");
+}
+
+.o-banner-motivation--2 {
+    background-image: url("images/landscape_motivation_2.jpg");
+}
+
+.o-banner-motivation--3 {
+    background-image: url("images/landscape_motivation_3.jpg");
+}
+
+.o-banner-motivation--4 {
+    background-image: url("images/landscape_motivation_4.jpg");
+}
+
+.o-banner-motivation__picture {
+    position: absolute;
+}
+
+.o-banner-motivation__text {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D9D9D9;
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* middle separator object */
+.o-box-separator {
+    position: relative;
+    margin: auto;
+}
+
+.o-box-separator::before {
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    content: '';
+    background: #ddd;
+    margin-left: -2px;
+}
+
+.o-box-separator__content {
+    position: relative;
+}
+
+.o-box-separator__content__thumbnail {
+    width: 400px;
+    margin: 25px;
+    display: inline-block;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    line-height: 25px;
+    padding: 25px;
+    vertical-align: top;
+}
+
+.o-box-separator__content__icon {
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+/* form object */
+.o-form-field {
+    display: inline-block;
+    text-align: left;
+    margin: 20px;
+}
+
+.o-form-label {
+    color: #ccc;
+    display: block;
+}
+
+.o-form-button {
+    display: block;
+    width: 150px;
+    margin: auto;
+}
+
+/******************************************************************************/
+/* COMPONENT CSS
+/******************************************************************************/
+
+/* Title component */
+.c-title {
+    display: inline-block;
+    color: #F8F8F8;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+/* Menu component */
+.c-menu {
+    display: inline-block;
+}
+
+.c-menu__ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.c-menu__li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.c-menu__link {
+    font-size: 20px;
+    text-decoration: none;
+    color: #F8F8F8;
+}
+
+.c-menu__link:hover {
+    color: #191919;
+}
+
+.c-menu__link--highlight {
+    color: #191919;
+}
+
+/* Home component */
+.c-home {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background: url("images/landscape_motivation_6.jpg") no-repeat center bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.c-home__content {
+    color: #F8F8F8;
+    align-self: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.c-home__name {
+    font-size: 6.4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.c-home__text {
+    font-size: 2.3rem;
+}
+
+/* About me component */
+.c-about-me {
+
+}
+
+.c-about-me__picture {
+    width: 15rem;
+    height: 15rem;
+    margin: 20px 0 0 0;
+    border-radius: 50%;
+}
+
+.c-about-me__description {
+    font-size: 1rem;
+    display: inline-block;
+    line-height: 25px;
+    text-align: left;
+    width: 600px;
+    margin: 25px;
+}
+
+
+/* skills component */
+.c-skills {
+    display: inline-block;
+    text-align: left;
+    margin: 20px 50px;
+    font-size: 1rem;
+    line-height: 25px;
+}
+
+.c-skills--description {
+    width: 450px;
+}
+
+/*  */
+.c-accomplishment {
+    font-size: 1rem;
+    line-height: 25px;
+    text-align: left;
+    width: 600px;
+    margin: 25px;
+    margin: auto;
+}
+
+.c-accomplishment__title {
+    text-align: center;
+}
+
+/* footer component */
+.c-footer {
+    background-color: #0D0D0D;
+    color: #ccc;
+    padding-bottom: 400px;
+        text-align: center;
+}
+
