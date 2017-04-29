@@ -3,9 +3,7 @@ html, body {
     font-family: sans-serif;
     font-size: 14px;
 }
-body {
-    font-size: 0;
-}
+
 p {
     margin: 0;
 }
@@ -32,7 +30,32 @@ p {
     100% { opacity:1; }
 }
 
-.c-home__opacity-block {
+.is-hide {
+    display: none !important;
+}
+
+/******************************************************************************/
+/* OBJECT CSS
+/******************************************************************************/
+
+/* banner object */
+.o-banner {
+    position: fixed;
+    top: -300px;
+    background-color: #999;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+}
+
+.o-banner--shown {
+    top: 0;
+}
+
+/* opacity block object */
+.o-opacity-block {
     width: 100%;
     height: 100%;
     background: black;
@@ -41,15 +64,12 @@ p {
     top: 0;
 }
 
-.o-logo-environment {
-    height: 75px;
-}
 
+/* Main section object */
 .o-section {
     background-color: #F8F8F8;
     padding: 75px 20px;
     text-align: center;
-    font-size: initial;
 }
 
 .o-section--dark {
@@ -65,87 +85,18 @@ p {
     margin: 0 0 25px 0;
 }
 
-.o-section__card {
-    display: inline-block;
-    background-color: #F8F8F8;
-    padding: 20px;
-    vertical-align: top;
-    text-align: initial;
-    min-width: 550px;
-    font-size: initial;
-    margin: 15px 10px;
-}
-
-.o-section__card--large {
-    width: 1100px;
-}
-
-.o-section__card--dark {
-    background-color: #191919;
-}
-
-.o-section__card--text-center {
-    text-align: center;
-}
-
-.o-section-motivation {
-    position: relative;
-    overflow: hidden;
-    background: no-repeat center bottom;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.o-section-motivation--1 {
-    background-image: url("images/landscape_motivation_1.jpg");
-}
-
-.o-section-motivation--2 {
-    background-image: url("images/landscape_motivation_2.jpg");
-}
-
-.o-section-motivation--3 {
-    background-image: url("images/landscape_motivation_3.jpg");
-}
-
-.o-section-motivation--4 {
-    background-image: url("images/landscape_motivation_4.jpg");
-}
-
-.o-section-motivation__picture {
-    position: absolute;
-}
-
-.o-section-motivation__text-div {
-    height: 100%;
-    width: 100%;
-    background-color: #000;
-    position: absolute;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.4;
-    color: #D9D9D9;
-}
-
-.o-section-motivation__text {
-    font-size: 50px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
+/* Progress bar object */
 .o-progress-bar {
+    font-size: 1rem;
+    line-height: 25px;
     width: 300px;
-    height: 10px;
-    background: #e4e4e4;
-    display: inline-block;
 }
 
 .o-progress-bar__text {
     position: relative;
     overflow: hidden;
+    height: 25px;
+    min-width: 60%;
 }
 
 .o-progress-bar__percent {
@@ -153,12 +104,101 @@ p {
     right: 0;
 }
 
-.o-progress-bar__loaded {
+.o-progress-bar__empty {
+    width: 300px;
+    height: 10px;
+    background: #e4e4e4;
+    display: inline-block;
+}
+
+.o-progress-bar__to-load {
     background: #222;
     height: 100%;
     width: 0;
 }
 
+/* Banner motivation object */
+.o-banner-motivation {
+    position: relative;
+    overflow: hidden;
+    background: no-repeat center bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.o-banner-motivation--1 {
+    background-image: url("images/landscape_motivation_1.jpg");
+}
+
+.o-banner-motivation--2 {
+    background-image: url("images/landscape_motivation_2.jpg");
+}
+
+.o-banner-motivation--3 {
+    background-image: url("images/landscape_motivation_3.jpg");
+}
+
+.o-banner-motivation--4 {
+    background-image: url("images/landscape_motivation_4.jpg");
+}
+
+.o-banner-motivation__picture {
+    position: absolute;
+}
+
+.o-banner-motivation__text {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #D9D9D9;
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* middle separator object */
+.o-box-separator {
+    position: relative;
+    margin: auto;
+}
+
+.o-box-separator::before {
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    content: '';
+    background: #ddd;
+    margin-left: -2px;
+}
+
+.o-box-separator__content {
+    position: relative;
+}
+
+.o-box-separator__content__thumbnail {
+    width: 400px;
+    margin: 25px;
+    display: inline-block;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    line-height: 25px;
+    padding: 25px;
+    vertical-align: top;
+}
+
+.o-box-separator__content__icon {
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+/* form object */
 .o-form-field {
     display: inline-block;
     text-align: left;
@@ -167,7 +207,6 @@ p {
 
 .o-form-label {
     color: #ccc;
-    font-size: initial;
     display: block;
 }
 
@@ -177,40 +216,32 @@ p {
     margin: auto;
 }
 
+/******************************************************************************/
+/* COMPONENT CSS
+/******************************************************************************/
+
+/* Title component */
+.c-title {
+    display: inline-block;
+    color: #F8F8F8;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+/* Menu component */
 .c-menu {
-    position: fixed;
-    top: -300px;
-    background-color: #999;
-    width: 100%;
-    z-index: 2;
-    text-align: center;
-    transition: 0.4s ease;
-    -webkit-transition: 0.4s ease;
-}
-
-.c-menu--shown {
-    top: 0;
-}
-
-.c-menu nav {
     display: inline-block;
 }
 
-.c-menu ul {
+.c-menu__ul {
     list-style: none;
     padding: 0;
     text-align: center;
 }
 
-.c-menu li {
+.c-menu__li {
     display: inline-block;
     margin: 10px;
-}
-
-.c-menu__name {
-    color: #F8F8F8;
-    font-size: 20px;
-    margin-right: 20px;
 }
 
 .c-menu__link {
@@ -227,6 +258,7 @@ p {
     color: #191919;
 }
 
+/* Home component */
 .c-home {
     width: 100%;
     height: 100%;
@@ -243,7 +275,6 @@ p {
     color: #F8F8F8;
     align-self: center;
     text-align: center;
-    font-size: initial;
     z-index: 1;
 }
 
@@ -256,6 +287,11 @@ p {
 
 .c-home__text {
     font-size: 2.3rem;
+}
+
+/* About me component */
+.c-about-me {
+
 }
 
 .c-about-me__picture {
@@ -274,88 +310,39 @@ p {
     margin: 25px;
 }
 
-.c-section-skills--description {
-    font-size: 1rem;
-    line-height: 25px;
-    width: 450px;
-}
 
-.c-section-skills {
+/* skills component */
+.c-skills {
     display: inline-block;
     text-align: left;
     margin: 20px 50px;
-}
-
-.c-skills-value {
     font-size: 1rem;
     line-height: 25px;
-    width: 300px;
 }
 
-.c-section-experience {
-    position: relative;
-    margin: auto;
+.c-skills--description {
+    width: 450px;
 }
 
-.c-section-experience::before {
-    position: absolute;
-    top: 0;
-    left: 18px;
-    width: 4px;
-    height: 100%;
-    content: '';
-    background: #ddd;
-    left: 50%;
-    margin-left: -2px;
-}
-
-.c-sextion-experience__section__cross {
-    top: 50px;
-    position: absolute;
-    font-size: 2rem;
-    left: 50%;
-    margin-left: -12px;
-}
-
-.c-section-experience__section {
-    position: relative;
-}
-
-.c-section-experience__section__description {
-    width: 400px;
-    margin: 25px;
-    display: inline-block;
+/*  */
+.c-accomplishment {
+    font-size: 1rem;
+    line-height: 25px;
     text-align: left;
-    background-color: white;
-    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
-    font-size: 1rem;
-    line-height: 25px;
-    padding: 25px;
-    vertical-align: top;
-}
-
-.c-education {
-    position: relative;
+    width: 600px;
+    margin: 25px;
     margin: auto;
 }
 
-.c-education::before {
-    position: absolute;
-    top: 0;
-    left: 18px;
-    width: 4px;
-    height: 100%;
-    content: '';
-    background: #ddd;
-    left: 50%;
-    margin-left: -2px;
+.c-accomplishment__title {
+    text-align: center;
 }
 
+/* footer component */
 .c-footer {
     background-color: #0D0D0D;
     color: #ccc;
     padding-bottom: 400px;
-    font-size: initial;
-    text-align: center;
+        text-align: center;
 }
 

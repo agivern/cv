@@ -1,58 +1,20 @@
 jQuery('document').ready(function(){
+    var $window = jQuery(window);
+    var $progressBar = jQuery('.js-progress-bar');
+    var $bannerMenu = jQuery('.js-banner-menu');
+    var $section = jQuery('.js-section');
+    var $home = jQuery('.js-home');
 
-    var nav = $('.c-menu');
+    // Initialize the page render
+    $home.css(
+        'height',
+        $window.height())
+    ;
 
-    jQuery('.js-home').css('height', (jQuery(window).height()));
-    jQuery('.js-section-motivation').css('height', (jQuery(window).height() / 2));
-
-
-    jQuery('.js-menu-link').click(function(){
-        jQuery('html, body').animate({scrollTop: (jQuery(this.hash).position().top - 40) + "px"}, 700);
-        return false;
-    });
-
-    jQuery(window).scroll(function () {
-        var windowsTop = jQuery(window).scrollTop();
-        var windowsBottom = windowsTop + jQuery(window).height();
-        var sectionSkillsTop = jQuery('.js-section-skills').offset().top;
-        var sectionSkillsBottom = sectionSkillsTop + jQuery('.js-section-skills').height();
-
-        if (windowsTop > 300) {
-            nav.addClass('c-menu--shown');
-        } else {
-            nav.removeClass('c-menu--shown');
-        }
-
-        jQuery('.js-section').each(function() {
-            if(windowsBottom / 2 >= jQuery(this).position().top) {
-                jQuery('.js-menu-link').each(function() {
-                    jQuery(this).removeClass('c-menu__link--highlight');
-                });
-                jQuery('.js-menu-link[href="#' + $(this).attr('id') + '"]').addClass('c-menu__link--highlight');
-            }
-        });
-
-
-        if (windowsBottom > sectionSkillsTop && windowsTop < sectionSkillsBottom)
-        {
-            if (!jQuery('.js-section-skills').hasClass('js-progress-bar-loaded'))
-            {
-                jQuery('.js-section-skills').addClass('js-progress-bar-loaded');
-                jQuery.each(jQuery('.js-progress-bar'),function(){
-                    progressBar(jQuery(this));
-                });
-            }
-        }
-        else
-        {
-            jQuery('.js-section-skills').removeClass('js-progress-bar-loaded');
-        }
-    });
-
-    jQuery(window).resize(function() {
-        jQuery('.js-home').css('height', (jQuery(window).height()));
-        jQuery('.js-section-motivation').css('height', (jQuery(window).height() / 2));
-    });
+    jQuery('.js-section-motivation').css(
+        'height',
+        $window.height() / 2
+    );
 
     Typed.new('.js-typist', {
         strings: jQuery('.js-typist').data('typist').split(','),
@@ -60,6 +22,91 @@ jQuery('document').ready(function(){
         backDelay: 2000,
         loop: true
     });
+
+    // Click on a link of the menu listener
+    jQuery('.js-menu-link').click(function(){
+        jQuery('html, body').animate(
+            {scrollTop: (jQuery(this.hash).position().top) + "px"},
+            700
+        );
+        return false;
+    });
+
+    // Scroll listener
+    $window.scroll(function () {
+        var windowsTop = $window.scrollTop();
+        var windowsBottom = windowsTop + $window.height();
+
+        if (windowsTop + 40 >= $home.height()) {
+            $bannerMenu.addClass('o-banner--shown');
+        } else {
+            $bannerMenu.removeClass('o-banner--shown');
+        }
+
+        $section.each(function() {
+            if(windowsBottom >= jQuery(this).position().top) {
+                jQuery('.js-menu-link').each(function() {
+                    jQuery(this).removeClass('c-menu__link--highlight');
+                });
+                jQuery('.js-menu-link[href="#' + $(this).attr('id') + '"]').addClass('c-menu__link--highlight');
+            }
+        });
+
+        $progressBar.each(function(){
+            var progressBarTop = jQuery(this).offset().top;
+            var progressBarBottom = progressBarTop + jQuery(this).height();
+            if (windowsBottom > progressBarTop && windowsTop < progressBarBottom)
+            {
+                if (!jQuery(this).hasClass('js-progress-bar__has-loaded'))
+                {
+                    jQuery(this).addClass('js-progress-bar__has-loaded');
+                    progressBar(jQuery(this).find('.js-progress-bar__to-load'));
+                }
+            }
+            else
+            {
+                jQuery(this).removeClass('js-progress-bar__has-loaded');
+            }
+        });
+
+
+    });
+
+    // Resize listener
+    $window.resize(function() {
+        jQuery('.js-home').css(
+            'height',
+            jQuery(window).height()
+        );
+        jQuery('.js-section-motivation').css(
+            'height',
+            $window.height() / 2
+        );
+    });
+
+    jQuery(".js-contact-me").click(function() {
+
+    jQuery.ajax({
+        url : 'contact.php',
+        type : 'POST',
+        data : getFormInput(),
+        contentType: 'application/json',
+        success : function(data) {
+            if (data.error) {
+                jQuery('.js-form-error').removeClass('is-hide');
+            }
+            else {
+                jQuery('.js-contact-me').addClass('is-hide');
+                jQuery('.js-form-error').addClass('is-hide');
+                jQuery('.js-form-success').removeClass('is-hide');
+            }
+        },
+        error : function(data) {
+            jQuery('.js-form-error').removeClass('is-hide');
+        }
+    });
+
+});
 });
 
 function progressBar(element) {
@@ -77,4 +124,13 @@ function progressBar(element) {
             element.css('width',width + '%');
         }
     }
+}
+
+function getFormInput() {
+    var jsonReturn = {
+        'email' : jQuery('.js-form-email').val(),
+        'subject' : jQuery('.js-form-subject').val(),
+        'message' : jQuery('.js-form-message').val()
+    };
+    return jsonReturn;
 }
