@@ -334,6 +334,23 @@ p {
     vertical-align: top;
 }
 
+.c-education {
+    position: relative;
+    margin: auto;
+}
+
+.c-education::before {
+    position: absolute;
+    top: 0;
+    left: 18px;
+    width: 4px;
+    height: 100%;
+    content: '';
+    background: #ddd;
+    left: 50%;
+    margin-left: -2px;
+}
+
 .c-footer {
     background-color: #0D0D0D;
     color: #ccc;

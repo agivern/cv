@@ -180,37 +180,51 @@
 
         <section id="education" class="o-section js-section">
             <h2 class="o-section__title">Education</h2>
-            <section class="o-section__card">
-                <h3>Bachelor of Science, Computer Science</h3>
-                <p>Graduated in 2014</p>
-                <p>IUT Vannes</p>
-                <ul>
-                    <li>Project management : V-Model, Agile software development (SCRUM, XP), notion CMMI</li>
-                    <li>Software engineering : UML, BOUML</li>
-                    <li>Programming languages : PHP 5, Java, JEE (Java servlet, JMS, JMX, XML-RPC, RMI, THREAD)</li>
-                    <li>Unit testing : JUNIT</li>
-                    <li>IDE : Eclipse, Netbeans, BOUML</li>
-                    <li>Tools : Java Swing, Spring, Jquery, Tomcat, Apache</li>
-                    <li>Software architecture : Service-oriented (XML, RPC, SOAP, WSDL), client-server, n-tiers, Ajax</li>
-                </ul>
-            </section>
+            <div class="c-education">
+                <section class="c-section-experience__section">
+                    <div class="c-section-experience__section__description">
+                        <p>Graduated in 2014 (IUT Vannes)</p>
+                    </div>
 
-            <section class="o-section__card">
-                <h3>BTEC Higher Nationals, Computing and Systems Development</h3>
-                <p>Graduated in 2013</p>
-                <p>IUT Vannes</p>
-                <ul>
-                    <li>Base of programming development</li>
-                    <li>Mathematical</li>
-                    <li>Project management : Tools (Gantt chart), V-Model, Agile software development(SCRUM)</li>
-                    <li>Software engineering : Design pattern, OOP</li>
-                    <li>Programming languages : Java, HTML/CSS, JavaScript, C/C++, Asm, Python, PHP</li>
-                    <li>Web project with CMS (GuPPy)</li>
-                    <li>Team Project : Tablet software with back office</li>
-                    <li>Traineeship</li>
-                </ul>
+                    <i class="c-sextion-experience__section__cross fa fa-times" aria-hidden="true"></i>
 
-            </section>
+                    <div class="c-section-experience__section__description">
+                        <h3>Bachelor of Science, Computer Science</h3>
+                        <ul>
+                            <li>Project management : V-Model, Agile software development (SCRUM, XP), notion CMMI</li>
+                            <li>Software engineering : UML, BOUML</li>
+                            <li>Programming languages : PHP 5, Java, JEE (Java servlet, JMS, JMX, XML-RPC, RMI, THREAD)</li>
+                            <li>Unit testing : JUNIT</li>
+                            <li>IDE : Eclipse, Netbeans, BOUML</li>
+                            <li>Tools : Java Swing, Spring, Jquery, Tomcat, Apache</li>
+                            <li>Software architecture : Service-oriented (XML, RPC, SOAP, WSDL), client-server, n-tiers, Ajax</li>
+                        </ul>
+                    </div>
+
+                </section>
+
+                <section class="c-section-experience__section">
+                    <div class="c-section-experience__section__description">
+                        <h3>BTEC Higher Nationals, Computing and Systems Development</h3>
+                        <ul>
+                            <li>Base of programming development</li>
+                            <li>Mathematical</li>
+                            <li>Project management : Tools (Gantt chart), V-Model, Agile software development(SCRUM)</li>
+                            <li>Software engineering : Design pattern, OOP</li>
+                            <li>Programming languages : Java, HTML/CSS, JavaScript, C/C++, Asm, Python, PHP</li>
+                            <li>Web project with CMS (GuPPy)</li>
+                            <li>Team Project : Tablet software with back office</li>
+                            <li>Traineeship</li>
+                        </ul>
+                    </div>
+
+                    <i class="c-sextion-experience__section__cross fa fa-times" aria-hidden="true"></i>
+
+                    <div class="c-section-experience__section__description">
+                        <p>Graduated in 2013 (IUT Vannes)</p>
+                    </div>
+                </section>
+            </div>
         </section>
 
         <section class="o-section-motivation js-section-motivation o-section-motivation--3">
