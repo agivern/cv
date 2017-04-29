@@ -1,0 +1,344 @@
+html, body {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+body {
+    font-size: 0;
+}
+p {
+    margin: 0;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.c-home__opacity-block {
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+}
+
+.o-logo-environment {
+    height: 75px;
+}
+
+.o-section {
+    background-color: #F8F8F8;
+    padding: 75px 20px;
+    text-align: center;
+    font-size: initial;
+}
+
+.o-section--dark {
+    background-color: #191919;
+    color: #ccc;
+}
+
+.o-section__title {
+    font-size: 2.2rem;
+    letter-spacing: 6px;
+    line-height: 38px;
+    text-transform: uppercase;
+    margin: 0 0 25px 0;
+}
+
+.o-section__card {
+    display: inline-block;
+    background-color: #F8F8F8;
+    padding: 20px;
+    vertical-align: top;
+    text-align: initial;
+    min-width: 550px;
+    font-size: initial;
+    margin: 15px 10px;
+}
+
+.o-section__card--large {
+    width: 1100px;
+}
+
+.o-section__card--dark {
+    background-color: #191919;
+}
+
+.o-section__card--text-center {
+    text-align: center;
+}
+
+.o-section-motivation {
+    position: relative;
+    overflow: hidden;
+    background: no-repeat center bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.o-section-motivation--1 {
+    background-image: url("images/landscape_motivation_1.jpg");
+}
+
+.o-section-motivation--2 {
+    background-image: url("images/landscape_motivation_2.jpg");
+}
+
+.o-section-motivation--3 {
+    background-image: url("images/landscape_motivation_3.jpg");
+}
+
+.o-section-motivation--4 {
+    background-image: url("images/landscape_motivation_4.jpg");
+}
+
+.o-section-motivation__picture {
+    position: absolute;
+}
+
+.o-section-motivation__text-div {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.4;
+    color: #D9D9D9;
+}
+
+.o-section-motivation__text {
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.o-progress-bar {
+    width: 300px;
+    height: 10px;
+    background: #e4e4e4;
+    display: inline-block;
+}
+
+.o-progress-bar__text {
+    position: relative;
+    overflow: hidden;
+}
+
+.o-progress-bar__percent {
+    position: absolute;
+    right: 0;
+}
+
+.o-progress-bar__loaded {
+    background: #222;
+    height: 100%;
+    width: 0;
+}
+
+.o-form-field {
+    display: inline-block;
+    text-align: left;
+    margin: 20px;
+}
+
+.o-form-label {
+    color: #ccc;
+    font-size: initial;
+    display: block;
+}
+
+.o-form-button {
+    display: block;
+    width: 150px;
+    margin: auto;
+}
+
+.c-menu {
+    position: fixed;
+    top: -300px;
+    background-color: #999;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+}
+
+.c-menu--shown {
+    top: 0;
+}
+
+.c-menu nav {
+    display: inline-block;
+}
+
+.c-menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.c-menu li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.c-menu__name {
+    color: #F8F8F8;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.c-menu__link {
+    font-size: 20px;
+    text-decoration: none;
+    color: #F8F8F8;
+}
+
+.c-menu__link:hover {
+    color: #191919;
+}
+
+.c-menu__link--highlight {
+    color: #191919;
+}
+
+.c-home {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background: url("images/landscape_motivation_6.jpg") no-repeat center bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.c-home__content {
+    color: #F8F8F8;
+    align-self: center;
+    text-align: center;
+    font-size: initial;
+    z-index: 1;
+}
+
+.c-home__name {
+    font-size: 6.4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.c-home__text {
+    font-size: 2.3rem;
+}
+
+.c-about-me__picture {
+    width: 15rem;
+    height: 15rem;
+    margin: 20px 0 0 0;
+    border-radius: 50%;
+}
+
+.c-about-me__description {
+    font-size: 1rem;
+    display: inline-block;
+    line-height: 25px;
+    text-align: left;
+    width: 600px;
+    margin: 25px;
+}
+
+.c-section-skills--description {
+    font-size: 1rem;
+    line-height: 25px;
+    width: 450px;
+}
+
+.c-section-skills {
+    display: inline-block;
+    text-align: left;
+    margin: 20px 50px;
+}
+
+.c-skills-value {
+    font-size: 1rem;
+    line-height: 25px;
+    width: 300px;
+}
+
+.c-section-experience {
+    position: relative;
+    margin: auto;
+}
+
+.c-section-experience::before {
+    position: absolute;
+    top: 0;
+    left: 18px;
+    width: 4px;
+    height: 100%;
+    content: '';
+    background: #ddd;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.c-sextion-experience__section__cross {
+    top: 50px;
+    position: absolute;
+    font-size: 2rem;
+    left: 50%;
+    margin-left: -12px;
+}
+
+.c-section-experience__section {
+    position: relative;
+}
+
+.c-section-experience__section__description {
+    width: 400px;
+    margin: 25px;
+    display: inline-block;
+    text-align: left;
+    background-color: white;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    line-height: 25px;
+    padding: 25px;
+    vertical-align: top;
+}
+
+.c-footer {
+    background-color: #0D0D0D;
+    color: #ccc;
+    padding-bottom: 400px;
+    font-size: initial;
+    text-align: center;
+}
+
