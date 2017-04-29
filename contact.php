@@ -2,8 +2,6 @@
     include 'config/config.php';
     require 'vendor/PHPMailer/PHPMailerAutoload.php';
 
-    header('Content-type: application/json');
-
     try {
         if (!empty($_POST['email']))
         {
@@ -56,6 +54,8 @@
     }
     catch (Exception $e)
     {
+        header('Content-type: application/json');
+
         echo json_encode(array(
             'error' => array(
                 'msg' => $e->getMessage(),
