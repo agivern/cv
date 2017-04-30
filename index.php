@@ -3,6 +3,17 @@
     <head>
         <meta charset="utf-8" />
         <title>Alexandre GIVERN</title>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-98291763-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
     </head>
 
     <body>
@@ -137,7 +148,7 @@
                             <li>Searching and developing with the new technology</li>
                             <li>Engineering and analysis for a new important website and API</li>
                             <li>Learning the maintenance and development of infrastructure place</li>
-                            <li>Implement and manage a partnered projects</li>
+                            <li>Implement and manage partnered projects</li>
                         </ul>
 
                         <p>An interview for welcometothejungle, to present my job at Beauteprivee <a href="http://www.welcometothejungle.co/articles/interview-developpeur-beauteprivee">here</a></p>
@@ -171,7 +182,7 @@
 
                 <section class="o-box-separator__content">
                     <div class="o-box-separator__content__thumbnail">
-                        <h3>Ful l Stack Developer</h3>
+                        <h3>Full Stack Developer</h3>
                         <ul>
                             <li>Internship for a web designer</li>
                             <li>Developement of a responsive website <a href="http://www.dbao.givern.com/dbao/index">here</a></li>
@@ -289,32 +300,17 @@
         <section id="contact" class="o-section o-section--dark js-section">
             <h2 class="o-section__title">Contact me</h2>
 
-            <section class="">
-                <div class="o-form-field">
-                    <label class="o-form-label">First name :</label>
-                    <input id="firstname" type="text"></input>
-                </div>
+            <section class="js-contact-form">
+                <input class="o-form-field js-form-email" type="text"  placeholder="Email" data-validation="email"></input>
 
-                <div class="o-form-field">
-                    <label class="o-form-label">E-mail : </label>
-                    <input id="email" type="text"></input>
-                </div>
+                <input class="o-form-field js-form-subject" type="text" placeholder="Subject" data-validation="required" data-validation-error-msg="Subject is a required field"></input>
 
-                <br/>
+                <textarea class="o-form-field o-form-field--textarea js-form-message" placeholder="Message" data-validation="required" data-validation-error-msg="Message is a required field"></textarea>
 
-                <div class="o-form-field">
-                    <label class="o-form-label">Last name :</label>
-                    <input id="lastname" type="text"></input>
-                </div>
+                <button class="o-form-button js-contact-me">Send your message</button>
 
-                <div class="o-form-field">
-                    <label class="o-form-label">Phone number :</label>
-                    <input id="phone" type="text"></input>
-                </div>
-                <label class="o-form-label">Message :</label>
-                <textarea id="message" name="message"></textarea>
-
-                <button class="o-form-button">Send your message</button>
+                <p class="js-form-success is-hide">Thanks you for contacting me ! I will answer you as soon as possible</p>
+                <p class="js-form-error is-hide">I am sorry, we can't sent your email right now. You can contact me on <a href="https://www.linkedin.com/in/agivern/">linkedin</a></p>
             </section>
         </section>
 
@@ -325,6 +321,7 @@
         <link rel="stylesheet" href="style.css" />
 
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
         <script type="text/javascript" src="typed.js"></script>
 
