@@ -148,7 +148,7 @@
                             <li>Searching and developing with the new technology</li>
                             <li>Engineering and analysis for a new important website and API</li>
                             <li>Learning the maintenance and development of infrastructure place</li>
-                            <li>Implement and manage a partnered projects</li>
+                            <li>Implement and manage partnered projects</li>
                         </ul>
 
                         <p>An interview for welcometothejungle, to present my job at Beauteprivee <a href="http://www.welcometothejungle.co/articles/interview-developpeur-beauteprivee">here</a></p>
@@ -300,22 +300,16 @@
         <section id="contact" class="o-section o-section--dark js-section">
             <h2 class="o-section__title">Contact me</h2>
 
-            <section class="">
-                <div class="o-form-field">
-                    <label class="o-form-label">E-mail</label>
-                    <input class="js-form-email" type="text"></input>
-                </div>
+            <section class="js-contact-form">
+                <input class="o-form-field js-form-email" type="text"  placeholder="Email" data-validation="email"></input>
 
-                <div class="o-form-field">
-                    <label class="o-form-label">Subject</label>
-                    <input class="js-form-subject" type="text"></input>
-                </div>
+                <input class="o-form-field js-form-subject" type="text" placeholder="Subject" data-validation="required" data-validation-error-msg="Subject is a required field"></input>
 
-                <label class="o-form-label">Message</label>
-                <textarea class="js-form-message" name="message"></textarea>
+                <textarea class="o-form-field o-form-field--textarea js-form-message" placeholder="Message" data-validation="required" data-validation-error-msg="Message is a required field"></textarea>
 
                 <button class="o-form-button js-contact-me">Send your message</button>
-                <p class="js-form-success is-hide">Thanks to contact me ! I will answer you as soon as possible</p>
+
+                <p class="js-form-success is-hide">Thanks you for contacting me ! I will answer you as soon as possible</p>
                 <p class="js-form-error is-hide">I am sorry, we can't sent your email right now. You can contact me on <a href="https://www.linkedin.com/in/agivern/">linkedin</a></p>
             </section>
         </section>
@@ -327,6 +321,7 @@
         <link rel="stylesheet" href="style.css" />
 
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
         <script type="text/javascript" src="typed.js"></script>
 

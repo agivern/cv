@@ -23,6 +23,10 @@ jQuery('document').ready(function(){
         loop: true
     });
 
+    jQuery.validate({
+        form: '.js-contact-form'
+    });
+
     // Click on a link of the menu listener
     jQuery('.js-menu-link').click(function(){
         jQuery('html, body').animate(
@@ -85,24 +89,29 @@ jQuery('document').ready(function(){
     });
 
     jQuery(".js-contact-me").click(function() {
-        jQuery.ajax({
-            url : 'contact.php',
-            type : 'POST',
-            data : getFormInput(),
-            success : function(data) {
-                if (data.error) {
+        if (jQuery('.js-form-email').hasClass('valid')
+            && jQuery('.js-form-subject').hasClass('valid')
+            && jQuery('.js-form-message').hasClass('valid'))
+        {
+            jQuery.ajax({
+                url : 'contact.php',
+                type : 'POST',
+                data : getFormInput(),
+                success : function(data) {
+                    if (data.error) {
+                        jQuery('.js-form-error').removeClass('is-hide');
+                    }
+                    else {
+                        jQuery('.js-contact-me').addClass('is-hide');
+                        jQuery('.js-form-error').addClass('is-hide');
+                        jQuery('.js-form-success').removeClass('is-hide');
+                    }
+                },
+                error : function(data) {
                     jQuery('.js-form-error').removeClass('is-hide');
                 }
-                else {
-                    jQuery('.js-contact-me').addClass('is-hide');
-                    jQuery('.js-form-error').addClass('is-hide');
-                    jQuery('.js-form-success').removeClass('is-hide');
-                }
-            },
-            error : function(data) {
-                jQuery('.js-form-error').removeClass('is-hide');
-            }
-        });
+            });
+        }
     });
 });
 
