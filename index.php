@@ -45,7 +45,7 @@
             <h2 class="o-section__title">About me</h2>
             <div class="c-about-me">
                 <img class="c-about-me__picture" src="images/me.jpg">
-                <div class="c-about-me__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere id sapien vitae elementum. Donec finibus sollicitudin massa, sed maximus est vulputate tincidunt. Aliquam in neque urna. Proin eget euismod justo. Cras metus erat, fringilla ac odio sit amet, faucibus placerat arcu. Ut odio ipsum, euismod a lobortis euismod, auctor in nibh. Mauris tempus consequat bibendum. Sed suscipit orci nec massa semper, in auctor ipsum vehicula. Duis nec ultricies sapien. Maecenas massa tortor, dapibus eu tortor ac, imperdiet pretium turpis. Suspendisse sem lacus, pulvinar sit amet lectus at, efficitur efficitur enim. Aenean est arcu, volutpat eu est ac, efficitur accumsan nisi. Curabitur augue nisl, mattis et urna sed, consequat imperdiet nibh. Aenean et sapien eu tortor egestas congue a at massa.</div>
+                <div class="c-about-me__description">I am an energetic, ambitious person who has developed a mature and responsible approach to any task. I am always willing to learn new skills since I discovered programing at 15 years old, and it's for that today I have strong technical skills. My experiences improved my project management and software enginering skills, and thank you at my older co-workers who teached to me what I needed to grow. I am eager to be challenged in order to grow and improve my communication and professional IT skills gained through previous experiences in the IT sector. If you have a good challenge to offer, anywhere in the world, contacted me as I am your man.</div>
             </div>
         </section>
 
@@ -148,7 +148,7 @@
                             <li>Searching and developing with the new technology</li>
                             <li>Engineering and analysis for a new important website and API</li>
                             <li>Learning the maintenance and development of infrastructure place</li>
-                            <li>Implement and manage a partnered projects</li>
+                            <li>Implement and manage partnered projects</li>
                         </ul>
 
                         <p>An interview for welcometothejungle, to present my job at Beauteprivee <a href="http://www.welcometothejungle.co/articles/interview-developpeur-beauteprivee">here</a></p>
@@ -272,22 +272,28 @@
             <section class="c-accomplishment"">
                 <h3 class="c-accomplishment__title">DBAO Website</h3>
                 <p>During my traineeship, I made a website with Symfony 2.</p>
-                <p>Link : <a href="http://www.dbao.givern.com/dbao/index">www.dbao.givern.com</a></p>
-                <p>Github : <a href="https://github.com/agivern/dbao">www.github.com</a></p>
+                <p>Link : <a href="http://www.dbao.givern.com/dbao/index">dbao.givern.com</a></p>
+                <p>Github : <a href="https://github.com/agivern/dbao">DBAO project</a></p>
+            </section>
+
+            <section class="c-accomplishment"">
+                <h3 class="c-accomplishment__title">3D project</h3>
+                <p>During my BTEC, I develop a 3D world with cpp.</p>
+                <p>Github : <a href="https://github.com/agivern/univers">Univers project</a></p>
             </section>
 
             <section class="c-accomplishment"">
                 <h3 class="c-accomplishment__title">Video game tool</h3>
                 <p>During my BTEC, I develop a tool resembling a database manager for video games.</p>
-                <p>Download : Not available</p>
-                <p>Github : Not available</p>
+                <p>Download : <a href="data/Generator.jar">Jar file available</a></p>
+                <p>Github : <a href="https://github.com/agivern/generatorStuff">Generator Stuff project</a></p>
             </section>
 
             <section class="c-accomplishment"">
                 <h3 class="c-accomplishment__title">Video game</h3>
                 <p>Before my BTEC, I self learned the programming language C and I created a video game.</p>
-                <p>Download : Not available</p>
-                <p>Github : Not available</p>
+                <p>Download : <a href="data/Inlandsis_Executable.zip">Inlandsis, windows executable (out of memory problem !)</a></p>
+                <p>Github : <a href="https://github.com/agivern/inlandsis">Inlandsis project</a></p>
             </section>
         </section>
 
@@ -300,22 +306,16 @@
         <section id="contact" class="o-section o-section--dark js-section">
             <h2 class="o-section__title">Contact me</h2>
 
-            <section class="">
-                <div class="o-form-field">
-                    <label class="o-form-label">E-mail</label>
-                    <input class="js-form-email" type="text"></input>
-                </div>
+            <section class="js-contact-form">
+                <input class="o-form-field js-form-email" type="text"  placeholder="Email" data-validation="email"></input>
 
-                <div class="o-form-field">
-                    <label class="o-form-label">Subject</label>
-                    <input class="js-form-subject" type="text"></input>
-                </div>
+                <input class="o-form-field js-form-subject" type="text" placeholder="Subject" data-validation="required" data-validation-error-msg="Subject is a required field"></input>
 
-                <label class="o-form-label">Message</label>
-                <textarea class="js-form-message" name="message"></textarea>
+                <textarea class="o-form-field o-form-field--textarea js-form-message" placeholder="Message" data-validation="required" data-validation-error-msg="Message is a required field"></textarea>
 
                 <button class="o-form-button js-contact-me">Send your message</button>
-                <p class="js-form-success is-hide">Thanks to contact me ! I will answer you as soon as possible</p>
+
+                <p class="js-form-success is-hide">Thanks you for contacting me ! I will answer you as soon as possible</p>
                 <p class="js-form-error is-hide">I am sorry, we can't sent your email right now. You can contact me on <a href="https://www.linkedin.com/in/agivern/">linkedin</a></p>
             </section>
         </section>
@@ -327,6 +327,7 @@
         <link rel="stylesheet" href="style.css" />
 
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
         <script type="text/javascript" src="typed.js"></script>
 
