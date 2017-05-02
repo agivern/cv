@@ -45,7 +45,7 @@
             <h2 class="o-section__title">About me</h2>
             <div class="c-about-me">
                 <img class="c-about-me__picture" src="images/me.jpg">
-                <div class="c-about-me__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere id sapien vitae elementum. Donec finibus sollicitudin massa, sed maximus est vulputate tincidunt. Aliquam in neque urna. Proin eget euismod justo. Cras metus erat, fringilla ac odio sit amet, faucibus placerat arcu. Ut odio ipsum, euismod a lobortis euismod, auctor in nibh. Mauris tempus consequat bibendum. Sed suscipit orci nec massa semper, in auctor ipsum vehicula. Duis nec ultricies sapien. Maecenas massa tortor, dapibus eu tortor ac, imperdiet pretium turpis. Suspendisse sem lacus, pulvinar sit amet lectus at, efficitur efficitur enim. Aenean est arcu, volutpat eu est ac, efficitur accumsan nisi. Curabitur augue nisl, mattis et urna sed, consequat imperdiet nibh. Aenean et sapien eu tortor egestas congue a at massa.</div>
+                <div class="c-about-me__description">I am an energetic, ambitious person who has developed a mature and responsible approach to any task. I am always willing to learn new skills since I discovered programing at 15 years old, and it's for that today I have strong technical skills. My experiences improved my project management and software enginering skills, and thank you at my older co-workers who teached to me what I needed to grow. I am eager to be challenged in order to grow and improve my communication and professional IT skills gained through previous experiences in the IT sector. If you have a good challenge to offer, anywhere in the world, contacted me as I am your man.</div>
             </div>
         </section>
 
@@ -272,22 +272,28 @@
             <section class="c-accomplishment"">
                 <h3 class="c-accomplishment__title">DBAO Website</h3>
                 <p>During my traineeship, I made a website with Symfony 2.</p>
-                <p>Link : <a href="http://www.dbao.givern.com/dbao/index">www.dbao.givern.com</a></p>
-                <p>Github : <a href="https://github.com/agivern/dbao">www.github.com</a></p>
+                <p>Link : <a href="http://www.dbao.givern.com/dbao/index">dbao.givern.com</a></p>
+                <p>Github : <a href="https://github.com/agivern/dbao">DBAO project</a></p>
+            </section>
+
+            <section class="c-accomplishment"">
+                <h3 class="c-accomplishment__title">3D project</h3>
+                <p>During my BTEC, I develop a 3D world with cpp.</p>
+                <p>Github : <a href="https://github.com/agivern/univers">Univers project</a></p>
             </section>
 
             <section class="c-accomplishment"">
                 <h3 class="c-accomplishment__title">Video game tool</h3>
                 <p>During my BTEC, I develop a tool resembling a database manager for video games.</p>
-                <p>Download : Not available</p>
-                <p>Github : Not available</p>
+                <p>Download : <a href="data/Generator.jar">Jar file available</a></p>
+                <p>Github : <a href="https://github.com/agivern/generatorStuff">Generator Stuff project</a></p>
             </section>
 
             <section class="c-accomplishment"">
                 <h3 class="c-accomplishment__title">Video game</h3>
                 <p>Before my BTEC, I self learned the programming language C and I created a video game.</p>
-                <p>Download : Not available</p>
-                <p>Github : Not available</p>
+                <p>Download : <a href="data/Inlandsis_Executable.zip">Inlandsis, windows executable (out of memory problem !)</a></p>
+                <p>Github : <a href="https://github.com/agivern/inlandsis">Inlandsis project</a></p>
             </section>
         </section>
 
