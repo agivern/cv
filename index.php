@@ -45,7 +45,7 @@
             <h2 class="o-section__title">About me</h2>
             <div class="c-about-me">
                 <img class="c-about-me__picture" src="images/me.jpg">
-                <div class="c-about-me__description">I am an energetic, ambitious person who has developed a mature and responsible approach to any task. I am always willing to learn new skills since I discovered programing at 15 years old, and it's for that today I have strong technical skills. My experiences improved my project management and software enginering skills, and thank you at my older co-workers who teached to me what I needed to grow. I am eager to be challenged in order to grow and improve my communication and professional IT skills gained through previous experiences in the IT sector. If you have a good challenge to offer, anywhere in the world, contacted me as I am your man.</div>
+                <div class="c-about-me__description">I am an energetic and ambitious person who has developed a mature and responsible approach to any task. I am always willing to learn new skills since I discovered programing at 15 years old and it's for that, I have strong technical skills today. My experiences improved my project management and software enginering skills, and thanks to my senior co-workers who taught to me what I needed to grow. I am eager to be challenged in order to grow and improve my communication and professional IT skills gained through previous experiences in the IT sector. If you have a good challenge to offer, anywhere in the world, contact me as I am your man.</div>
             </div>
         </section>
 
