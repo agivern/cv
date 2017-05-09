@@ -49,6 +49,8 @@
             </div>
         </section>
 
+        <p class="c-paper-cv">Do you prefer a paper cv ? It's here <a class="c-paper-cv__button"href="data/AlexandreGivern_CV.pdf">Download</a></p>
+
         <section id="skills" class="o-section">
             <section class="c-skills">
                 <h3>Professional skills</h3>
@@ -126,8 +128,11 @@
             </section>
 
             <section class="c-skills c-skills--description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean metus arcu, sodales non vehicula non, eleifend non ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed faucibus odio eget ipsum egestas varius. Suspendisse auctor arcu diam, quis scelerisque urna dapibus a. Suspendisse hendrerit sapien id elit sodales molestie. Proin augue ante, condimentum non tellus vitae, rutrum euismod tortor. Aenean efficitur, arcu ut pharetra luctus, tortor massa maximus lectus, at blandit nulla massa ut ipsum. Ut scelerisque massa vitae mauris ultricies, vitae accumsan dolor varius. Duis nec ante malesuada eros sollicitudin aliquam ac et lorem. In luctus lacinia luctus. Vestibulum porta tortor vel sapien iaculis accumsan.</br></br>
-                Nunc pulvinar placerat nunc. Vivamus ut dolor sit amet justo finibus dictum. Nunc mauris purus, blandit ac vestibulum vitae, dictum at arcu. Duis egestas dolor ex, sit amet finibus elit malesuada et. Curabitur eget varius metus. Duis ut ultrices ligula.
+                I acquired differents skills during my career. At the begining I learned by myself the langage C and basic Casio during the high school. Ifalled in love for the programmation, and I choose to continu in this voice with diploma focus on the development.
+                </br></br>
+                After that I learned a lot about the programation at school (analyse, engineering, project management) and news langages (Java, Cpp, SQL, PHP). I focused the langage Java, and I made differents little projects to challenge me. But after the school my web development was my weakness, server, SQL, PHP, AJAX... I didn't understand correctly how to make a correct website, so I worked in different company to learn this.
+                </br></br>
+                I am following the news about development and I tried the news langages and technologies (nodeJs, angular, reactjs, swift). I like to learn, and I continue everyday to learn something, by example I am learning python and software engeneering.
             </section>
         </section>
 
