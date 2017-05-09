@@ -349,6 +349,33 @@ p {
 }
 
 
+/* Paper cv component */
+.c-paper-cv {
+    text-align: center;
+    background-color: #F8F8F8;
+    font-size: 1.5rem;
+}
+
+.c-paper-cv__button {
+    margin: 20px auto;
+    padding: 6px 12px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
 /* skills component */
 .c-skills {
     display: inline-block;
@@ -362,7 +389,7 @@ p {
     width: 450px;
 }
 
-/*  */
+/* accomplishement component */
 .c-accomplishment {
     font-size: 1rem;
     line-height: 25px;
