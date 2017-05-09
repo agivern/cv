@@ -64,6 +64,28 @@ p {
     top: 0;
 }
 
+/* social link object */
+.o-social-link {
+    line-height: 35px;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin: 0 2px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #e4e4e4;
+    border-radius: 50%;
+    margin-top: 50px;
+    -webkit-transition: border-color .2s ease-in, background-color .2s ease-in;
+    -moz-transition: border-color .2s ease-in, background-color .2s ease-in;
+    -o-transition: border-color .2s ease-in, background-color .2s ease-in;
+    transition: border-color .2s ease-in, background-color .2s ease-in;
+}
+
+.o-social-link:hover {
+    background-color: black;
+    border-color: #000;
+}
 
 /* Main section object */
 .o-section {
@@ -347,7 +369,6 @@ p {
     margin: 25px;
     vertical-align: top;
 }
-
 
 /* Paper cv component */
 .c-paper-cv {

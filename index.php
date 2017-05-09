@@ -38,6 +38,18 @@
                 <p class="c-home__text">
                     I am a<span class="js-typist" data-typist=" Software developer, Web Developer,n Analyst Programmer, Full-Stack Developer"></span>
                 </p>
+
+                <a target="_blank" href="https://www.facebook.com/agivern" class="o-social-link">
+                    <i class="fa fa-facebook"></i>
+                </a>
+
+                <a target="_blank" href="https://twitter.com/GivernAlexandre" class="o-social-link">
+                    <i class="fa fa-twitter"></i>
+                </a>
+
+                <a target="_blank" href="https://www.linkedin.com/in/agivern" class="o-social-link">
+                    <i class="fa fa-linkedin"></i>
+                </a>
             </div>
         </section>
 
@@ -49,7 +61,7 @@
             </div>
         </section>
 
-        <p class="c-paper-cv">Do you prefer a paper cv ? It's here <a class="c-paper-cv__button"href="data/AlexandreGivern_CV.pdf">Download</a></p>
+        <p class="c-paper-cv">Do you prefer a paper cv ? It's here <a target="_blank" class="c-paper-cv__button"href="data/AlexandreGivern_CV.pdf">Download</a></p>
 
         <section id="skills" class="o-section">
             <section class="c-skills">
@@ -271,34 +283,34 @@
             <section class="c-accomplishment">
                 <h3 class="c-accomplishment__title">French interview</h3>
                 <p>French interview to present beauteprivee, explain my job and my choice.</p>
-                <p>Link : <a href="http://www.welcometothejungle.co/articles/interview-developpeur-beauteprivee">www.welcometothejungle.co</a></p>
+                <p>Link : <a target="_blank" href="http://www.welcometothejungle.co/articles/interview-developpeur-beauteprivee">www.welcometothejungle.co</a></p>
             </section>
 
             <section class="c-accomplishment"">
                 <h3 class="c-accomplishment__title">DBAO Website</h3>
                 <p>During my traineeship, I made a website with Symfony 2.</p>
-                <p>Link : <a href="http://www.dbao.givern.com/dbao/index">dbao.givern.com</a></p>
-                <p>Github : <a href="https://github.com/agivern/dbao">DBAO project</a></p>
+                <p>Link : <a target="_blank" href="http://www.dbao.givern.com/dbao/index">dbao.givern.com</a></p>
+                <p>Github : <a target="_blank" href="https://github.com/agivern/dbao">DBAO project</a></p>
             </section>
 
             <section class="c-accomplishment"">
                 <h3 class="c-accomplishment__title">3D project</h3>
                 <p>During my BTEC, I develop a 3D world with cpp.</p>
-                <p>Github : <a href="https://github.com/agivern/univers">Univers project</a></p>
+                <p>Github : <a target="_blank" href="https://github.com/agivern/univers">Univers project</a></p>
             </section>
 
             <section class="c-accomplishment"">
                 <h3 class="c-accomplishment__title">Video game tool</h3>
                 <p>During my BTEC, I develop a tool resembling a database manager for video games.</p>
-                <p>Download : <a href="data/Generator.jar">Jar file available</a></p>
-                <p>Github : <a href="https://github.com/agivern/generatorStuff">Generator Stuff project</a></p>
+                <p>Download : <a target="_blank" href="data/Generator.jar">Jar file available</a></p>
+                <p>Github : <a target="_blank" href="https://github.com/agivern/generatorStuff">Generator Stuff project</a></p>
             </section>
 
             <section class="c-accomplishment"">
                 <h3 class="c-accomplishment__title">Video game</h3>
                 <p>Before my BTEC, I self learned the programming language C and I created a video game.</p>
-                <p>Download : <a href="data/Inlandsis_Executable.zip">Inlandsis, windows executable (out of memory problem !)</a></p>
-                <p>Github : <a href="https://github.com/agivern/inlandsis">Inlandsis project</a></p>
+                <p>Download : <a target="_blank" href="data/Inlandsis_Executable.zip">Inlandsis, windows executable</a> (out of memory problem !)</p>
+                <p>Github : <a target="_blank" href="https://github.com/agivern/inlandsis">Inlandsis project</a></p>
             </section>
         </section>
 
