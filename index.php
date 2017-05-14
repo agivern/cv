@@ -140,9 +140,9 @@
             </section>
 
             <section class="c-skills c-skills--description">
-                I acquired differents skills during my career. Initially I learned the langage C and basic Casio by myself during the high school. I fell in love for the programing, and I chose to continue in this direction with a diploma focusing on development.
+                I acquired different skills during my career. Initially I learned the language C and basic Casio by myself during the high school. I fell in love with programing, and I chose to continue in this direction with a diploma focusing on development.
                 </br></br>
-                After that I learned a lot about programing at school (analyse, engineering, project management) and news languages (Java, Cpp, SQL, PHP). I focused on Java, and I develop different projects to challenge myself. After the school my web development remained my only weakness, (server, SQL, PHP, AJAX) I didn't understand exactly how to make a correct website, so I worked in different companies to learn this.
+                After that I learned a lot about programing at school (analyse, engineering, project management) and new languages (Java, Cpp, SQL, PHP). I focused on Java, and I develop different projects to challenge myself. After the school my web development remained my only weakness (server, SQL, PHP, AJAX). I didn't understand exactly how to make a correct website, so I worked in different companies to learn this.
                 </br></br>
                 I am up-to-date on development and I try to learn the new languages and technologies (nodeJs, angular, reactjs, swift). I like to learn and I continue to learn something everyday, for instance I am learning python and software engineering.
             </section>
