@@ -213,7 +213,7 @@ p {
     text-align: left;
     background-color: white;
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 25px;
     padding: 25px;
     vertical-align: top;
@@ -231,7 +231,7 @@ p {
     margin: 20px;
     width: 300px;
     padding: 6px 12px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 1.5rem;
     color: #555;
     background-color: #fff;
@@ -338,7 +338,7 @@ p {
 }
 
 .c-home__name {
-    font-size: 6.4rem;
+    font-size: 5.4rem;
     font-weight: 800;
     text-transform: uppercase;
     margin: 0;
@@ -361,7 +361,7 @@ p {
 }
 
 .c-about-me__description {
-    font-size: 1rem;
+    font-size: 1.3rem;
     display: inline-block;
     line-height: 25px;
     text-align: left;
@@ -402,7 +402,7 @@ p {
     display: inline-block;
     text-align: left;
     margin: 20px 50px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 25px;
 }
 
@@ -412,7 +412,7 @@ p {
 
 /* accomplishement component */
 .c-accomplishment {
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 25px;
     text-align: left;
     width: 600px;
