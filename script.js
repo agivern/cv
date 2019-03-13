@@ -94,9 +94,11 @@ jQuery('document').ready(function(){
             && jQuery('.js-form-message').hasClass('valid'))
         {
             jQuery.ajax({
-                url : 'contact.php',
+                url : 'https://api.givern.com/mailing/resume',
                 type : 'POST',
                 data : getFormInput(),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
                 success : function(data) {
                     if (data.error) {
                         jQuery('.js-form-error').removeClass('is-hide');
@@ -138,5 +140,5 @@ function getFormInput() {
         'subject' : jQuery('.js-form-subject').val(),
         'message' : jQuery('.js-form-message').val()
     };
-    return jsonReturn;
+    return JSON.stringify(jsonReturn);
 }
